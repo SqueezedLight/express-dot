@@ -14,7 +14,7 @@ var _globals = {
 
         // no content so let's load from file system
         if(template == null){
-          template = fs.readFileSync(path.join(__dirname, file));
+          template = fs.readFileSync(path.join(appRoot, file));
         }
 
         // let's cache the partial
